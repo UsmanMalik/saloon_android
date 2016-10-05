@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.materialdesigncodelab.test">
+    package="com.saloon.android.bluecactus.app.test">
 
     <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.example.android.materialdesigncodelab"
+                     android:targetPackage="com.saloon.android.bluecactus.app"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.example.android.materialdesigncodelab"/>
+                     android:label="Tests for com.saloon.android.bluecactus.app"/>
 </manifest>

@@ -8,12 +8,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_navigation_menu.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
@@ -32,12 +32,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/recycler_view.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/recycler_view.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/recycler_view.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/recycler_view.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
@@ -56,12 +56,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_bottom_sheet_dialog.xml",
@@ -84,28 +84,28 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/item_tile.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/item_tile.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_layout_snackbar.xml"
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_media.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_expanded_menu_layout.xml"
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_layout_snackbar.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
@@ -164,12 +164,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/support_simple_spinner_dropdown_item.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_navigation_item_header.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/item_list.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/item_list.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/layout/design_navigation_item_header.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
@@ -184,12 +184,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/notification_template_lines.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",

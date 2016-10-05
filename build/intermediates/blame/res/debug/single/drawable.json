@@ -96,12 +96,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable/ic_share.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/drawable/ic_share.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
