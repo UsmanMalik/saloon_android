@@ -1,0 +1,5 @@
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/materialdesigncodelab/UI/UI/ListContentFragment$ViewHolder$1$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/materialdesigncodelab/UI/UI/ListContentFragment$ViewHolder$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/materialdesigncodelab/UI/UI/ListContentFragment$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/example/android/materialdesigncodelab/UI/UI/ListContentFragment$ContentAdapter$override.class

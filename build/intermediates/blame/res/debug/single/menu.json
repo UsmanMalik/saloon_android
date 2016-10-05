@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/menu/menu_navigation.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/menu/menu_navigation.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/menu/menu_main.xml"
+    }
+]
