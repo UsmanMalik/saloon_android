@@ -25,7 +25,12 @@ import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.android.volley.toolbox.ImageLoader;
+import com.android.volley.toolbox.NetworkImageView;
 import com.saloon.android.bluecactus.R;
+import com.saloon.android.bluecactus.app.Models.Division;
+import com.saloon.android.bluecactus.app.Utils.CustomVolleyRequestQueue;
+import com.saloon.android.bluecactus.app.Utils.GlobalVariables;
 
 /**
  * Provides UI for the Detail page with Collapsing Toolbar.
@@ -33,6 +38,11 @@ import com.saloon.android.bluecactus.R;
 public class DetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_POSITION = "position";
+
+    private Division division;
+    private NetworkImageView mNetworkImageView;
+    private ImageLoader mImageLoader;
+    final String url = "http://192.168.43.108:3000";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,22 +57,39 @@ public class DetailActivity extends AppCompatActivity {
         // collapsingToolbar.setTitle(getString(R.string.item_title));
 
         int postion = getIntent().getIntExtra(EXTRA_POSITION, 0);
+        division = GlobalVariables.getInstance().getArrayList().get(postion);
         Resources resources = getResources();
         String[] places = resources.getStringArray(R.array.places);
-        collapsingToolbar.setTitle(places[postion % places.length]);
+        collapsingToolbar.setTitle(division.getTitle());
+
+
 
         String[] placeDetails = resources.getStringArray(R.array.place_details);
         TextView placeDetail = (TextView) findViewById(R.id.place_detail);
-        placeDetail.setText(placeDetails[postion % placeDetails.length]);
+        placeDetail.setText(division.getDescription());
 
         String[] placeLocations = resources.getStringArray(R.array.place_locations);
         TextView placeLocation =  (TextView) findViewById(R.id.place_location);
-        placeLocation.setText(placeLocations[postion % placeLocations.length]);
+        placeLocation.setText(division.getTitle());
 
-        TypedArray placePictures = resources.obtainTypedArray(R.array.places_picture);
-        ImageView placePicutre = (ImageView) findViewById(R.id.image);
-        placePicutre.setImageDrawable(placePictures.getDrawable(postion % placePictures.length()));
 
-        placePictures.recycle();
+        // Instantiate the RequestQueue.
+        mImageLoader = CustomVolleyRequestQueue.getInstance(this)
+                .getImageLoader();
+
+        mNetworkImageView = (NetworkImageView)findViewById(R.id.image);
+
+        //Image URL - This can point to any image file supported by Android
+        mImageLoader.get(url+division.getImage_url(), ImageLoader.getImageListener(mNetworkImageView,
+                R.mipmap.ic_launcher, android.R.drawable
+                        .ic_dialog_alert));
+        mNetworkImageView.setImageUrl(url, mImageLoader);
+
+
+//        TypedArray placePictures = resources.obtainTypedArray(R.array.places_picture);
+//        ImageView placePicutre = (ImageView) findViewById(R.id.image);
+//        placePicutre.setImageDrawable(placePictures.getDrawable(postion % placePictures.length()));
+//
+//        placePictures.recycle();
     }
 }

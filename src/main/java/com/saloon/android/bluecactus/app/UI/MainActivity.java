@@ -16,6 +16,8 @@
 
 package com.saloon.android.bluecactus.app.UI;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -99,6 +101,10 @@ public class MainActivity extends AppCompatActivity {
 
                         // TODO: handle navigation
                         Toast.makeText(MainActivity.this, "Clicked: " + menuItem.getTitle(), Toast.LENGTH_SHORT).show();
+
+                        Intent intent = new Intent(MainActivity.this, Appointment.class);
+
+                        MainActivity.this.startActivity(intent);
 
                         // Closing drawer on item click
                         mDrawerLayout.closeDrawers();

@@ -65,7 +65,7 @@ public class NetworkRequests {
     public ArrayList<Division> getDivisions(){
 
         final ArrayList<Division> divisionList = new ArrayList<Division>();
-        String temp_url = "http://192.168.43.108:3000/api/category/complete_data";
+        String temp_url = "http://192.168.43.108:3000/api/divisions";
 
 
         JsonArrayRequest jsonRequest = new JsonArrayRequest
@@ -76,8 +76,8 @@ public class NetworkRequests {
                         try {
                             for (int i=0 ; i< response.length(); i++){
                                 JSONObject jsonObject =  response.getJSONObject(i);
-                                Division division = new Division(jsonObject.getString("title"), jsonObject.getString("avatar_url_medium"), jsonObject.getString("description"));
-                                Log.i("response object " + i + " :"  ,jsonObject.getString("title"));
+                                Division division = new Division(jsonObject.getString("main"), jsonObject.getString("description"),jsonObject.getString("avatar_url_original"), jsonObject.getString("avatar_url_thumb"),jsonObject.getString("avatar_url_medium") );
+                                Log.i("response object " + i + " :"  ,jsonObject.getString("main"));
                                 divisionList.add(division);
                                 Log.i("Division adding..", divisionList.size()+"");
                             }

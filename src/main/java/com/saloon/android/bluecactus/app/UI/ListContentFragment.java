@@ -130,10 +130,8 @@ public class ListContentFragment extends Fragment {
                     R.mipmap.ic_launcher, android.R.drawable
                             .ic_dialog_alert));
             mNetworkImageView.setImageUrl(url, mImageLoader);
-
-//            holder.avator.setImageDrawable(mPlaceAvators[position % mPlaceAvators.length]);
             holder.name.setText(divisionList.get(position).getTitle());
-            holder.description.setText(mPlaceDesc[position % mPlaceDesc.length]);
+            holder.description.setText(divisionList.get(position).getDescription());
         }
 
         @Override

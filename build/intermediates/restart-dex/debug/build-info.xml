@@ -4,31 +4,47 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="5029114762916" >
+    timestamp="22259356737661" >
 
     <task
         name="javac"
-        duration="310" />
+        duration="244" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="26" />
     <task
         name="verifier"
-        duration="8" />
+        duration="1" />
 
     <artifact
         location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
         type="DEX" />
 
-    <build timestamp="4877675025636" >
+    <build timestamp="20275522582315" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="5029114762916" >
+    <build timestamp="21215049549835" >
+        <artifact
+            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="22035152690446" >
+        <artifact
+            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="22259356737661" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
             type="DEX" />
