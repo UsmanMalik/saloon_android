@@ -48,7 +48,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.saloon.android.bluecactus.app.UI.MainActivity" />
         </activity>
-        <activity android:name="com.saloon.android.bluecactus.app.UI.Appointment" />
+        <activity
+            android:name="com.saloon.android.bluecactus.app.UI.Appointment"
+            android:parentActivityName="com.saloon.android.bluecactus.app.UI.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.saloon.android.bluecactus.app.UI.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

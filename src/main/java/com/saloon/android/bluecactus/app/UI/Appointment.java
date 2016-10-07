@@ -13,17 +13,23 @@ import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import com.saloon.android.bluecactus.app.Network.NetworkRequests;
 import com.wdullaer.materialdatetimepicker.Utils;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 import com.wdullaer.materialdatetimepicker.time.RadialPickerLayout;
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
 
+import java.io.StringReader;
 import java.util.Calendar;
 
 
@@ -36,6 +42,10 @@ public class Appointment extends AppCompatActivity implements
     private TextView dateTextView;
     Button timeButton;
     Button dateButton;
+    Button submitButton;
+    String time;
+    String date;
+    EditText detail;
 
 
     @Override
@@ -43,11 +53,19 @@ public class Appointment extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appointment);
 
+        setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
+
         // Find our View instances
         timeTextView = (TextView)findViewById(R.id.time_textview);
         dateTextView = (TextView)findViewById(R.id.date_textview);
          timeButton = (Button)findViewById(R.id.time_button);
          dateButton = (Button)findViewById(R.id.date_button);
+        submitButton = (Button)findViewById(R.id.submit_appointmnet);
 
         // Show a timepicker when the timeButton is clicked
         timeButton.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +101,17 @@ public class Appointment extends AppCompatActivity implements
                 dpd.show(getFragmentManager(), "Datepickerdialog");
             }
         });
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                detail = (EditText)findViewById(R.id.appointment_detail);
+                NetworkRequests networkRequests = new NetworkRequests(Appointment.this);
+                networkRequests.setAppointment(time,date,detail.getText().toString());
+
+            }
+        });
     }
 
     @Override
@@ -101,12 +130,14 @@ public class Appointment extends AppCompatActivity implements
         String minuteString = minute < 10 ? "0"+minute : ""+minute;
         String secondString = second < 10 ? "0"+second : ""+second;
         String time = "You picked the following time: "+hourString+"h"+minuteString+"m"+secondString+"s";
+        this.time = hourString+"h "+minuteString+"m";
         timeTextView.setText(time);
     }
 
     @Override
     public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
         String date = "You picked the following date: "+dayOfMonth+"/"+(++monthOfYear)+"/"+year;
+        this.date = dayOfMonth+"/"+(++monthOfYear)+"/"+year;
         dateTextView.setText(date);
     }
 }

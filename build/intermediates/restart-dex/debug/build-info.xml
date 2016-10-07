@@ -4,31 +4,33 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="22259356737661" >
+    timestamp="41229546436981" >
 
     <task
         name="javac"
-        duration="244" />
+        duration="142" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="26" />
+        duration="37" />
     <task
         name="verifier"
-        duration="1" />
+        duration="2" />
 
     <artifact
-        location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+        location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
         type="DEX" />
 
-    <build timestamp="20275522582315" >
+    <build timestamp="37178956916999" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="21215049549835" >
+    <build
+        timestamp="37968922689660"
+        verifier="R_CLASS_CHANGE" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
             type="DEX" />
@@ -36,7 +38,7 @@
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="22035152690446" >
+    <build timestamp="39804696300682" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
@@ -44,9 +46,14 @@
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
             type="DEX" />
     </build>
-    <build timestamp="22259356737661" >
+    <build timestamp="40221504410840" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="41229546436981" >
+        <artifact
+            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
             type="DEX" />
     </build>
 

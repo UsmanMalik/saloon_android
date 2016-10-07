@@ -1,3 +1,6 @@
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/Appointment$1$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/Appointment$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$4$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$1$override.class
 CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$2$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$3$override.class

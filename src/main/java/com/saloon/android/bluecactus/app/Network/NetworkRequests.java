@@ -8,6 +8,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.saloon.android.bluecactus.app.Models.Division;
 
@@ -16,6 +17,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by usman on 10/4/16.
@@ -98,6 +101,49 @@ public class NetworkRequests {
         Log.i("Network Class: ", divisionList.size()+"");
 
         return divisionList;
+    }
+
+    public boolean setAppointment(final String time,final String date, final String details){
+
+        Log.i("Set Appointment: " , time + " " + date + " " + details);
+        String temp_url = "http://192.168.43.108:3000/api/divisions";
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response).getJSONObject("form");
+                            String site = jsonResponse.getString("site"),
+                                    network = jsonResponse.getString("network");
+                            System.out.println("Site: "+site+"\nNetwork: "+network);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String> params = new HashMap<>();
+                // the POST parameters:
+                params.put("time", time);
+                params.put("date", date);
+                params.put("details", details);
+                return params;
+            }
+        };
+        Volley.newRequestQueue(context).add(postRequest);
+
+        return false;
     }
 
 }
