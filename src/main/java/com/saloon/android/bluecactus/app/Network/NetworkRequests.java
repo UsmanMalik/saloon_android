@@ -1,6 +1,7 @@
 package com.saloon.android.bluecactus.app.Network;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.android.volley.Request;
@@ -11,6 +12,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.saloon.android.bluecactus.app.Models.Division;
+import com.saloon.android.bluecactus.app.Models.User;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,6 +30,9 @@ public class NetworkRequests {
     Context context;
     static String url = "http://httpbin.org/get?site=code&network=tutsplus";
     static  String RESULT_TAG = "Json Result: ";
+//    public static final String MyPREFERENCES = "MyPrefs" ;
+//    SharedPreferences sharedpreferences;
+
 
     public NetworkRequests(Context context) {
         this.context = context;
@@ -106,7 +111,7 @@ public class NetworkRequests {
     public boolean setAppointment(final String time,final String date, final String details){
 
         Log.i("Set Appointment: " , time + " " + date + " " + details);
-        String temp_url = "http://192.168.43.108:3000/api/divisions";
+        String temp_url = "http://192.168.43.108:3000/api/appointments";
 
 
         StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
@@ -114,10 +119,9 @@ public class NetworkRequests {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            JSONObject jsonResponse = new JSONObject(response).getJSONObject("form");
-                            String site = jsonResponse.getString("site"),
-                                    network = jsonResponse.getString("network");
-                            System.out.println("Site: "+site+"\nNetwork: "+network);
+                            JSONObject jsonResponse = new JSONObject(response).getJSONObject("result");
+
+                            System.out.println("Site: "+jsonResponse.toString());
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -146,4 +150,64 @@ public class NetworkRequests {
         return false;
     }
 
+    public boolean registerUser(final User user){
+
+        String temp_url = "http://192.168.43.108:3000/api/register";
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+                new Response.Listener<String>() {
+                    boolean  requestResult =false;
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+                          JSONObject jsonResponse = new JSONObject(response);
+                            String result = jsonResponse.getString("result");
+                            JSONObject user = jsonResponse.getJSONObject("user");
+                            Log.d("first_name", user.getString("first_name"));
+
+                            SharedPreferences sharedpreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedpreferences.edit();
+
+                            editor.putString("result", result);
+                            editor.putString("first_name", user.getString("first_name"));
+                            editor.putString("email", user.getString("email"));
+                            editor.putString("password", user.getString("password"));
+
+
+                            editor.commit();
+
+
+                            System.out.println("Site: "+ response);
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String> params = new HashMap<>();
+                // the POST parameters:
+                params.put("first_name", user.getFirst_name());
+                params.put("email", user.getEmail());
+                params.put("password", user.getPassword());
+                return params;
+            }
+        };
+        Volley.newRequestQueue(context).add(postRequest);
+
+        return true; // need to implement callback
+    }
+
 }
+
+

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-land/mdtp_done_background_color.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/drawable-land/mdtp_done_background_color.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-land/mdtp_done_background_color_dark.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/drawable-land/mdtp_done_background_color_dark.xml"
+    }
+]
