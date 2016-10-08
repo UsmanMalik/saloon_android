@@ -1,9 +1,0 @@
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/SignupActivity$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/SignupActivity$2$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/SignupActivity$1$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/UI/SignupActivity$3$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$10$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$9$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$8$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$override.class
-CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

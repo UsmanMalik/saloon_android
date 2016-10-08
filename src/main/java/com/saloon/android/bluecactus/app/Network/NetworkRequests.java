@@ -208,6 +208,65 @@ public class NetworkRequests {
         return true; // need to implement callback
     }
 
+    public boolean loginUser(final String email, final String password){
+
+        String temp_url = "http://192.168.43.108:3000/api/sessions";
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+
+                            Log.d("Login Response", response);
+                            JSONObject jsonResponse = new JSONObject(response);
+
+                            String api_key = jsonResponse.getString("api_key");
+                            JSONObject user = jsonResponse.getJSONObject("user");
+                            Log.d("first_name", user.getString("first_name"));
+                            SharedPreferences sharedpreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedpreferences.edit();
+
+                            editor.putString("api_key", api_key);
+                            editor.putString("first_name", user.getString("first_name"));
+                            editor.putString("email", user.getString("email"));
+                            editor.putString("password", user.getString("password"));
+
+
+                            editor.commit();
+
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String> params = new HashMap<>();
+                // the POST parameters:
+                params.put("email", email);
+                params.put("password", password);
+                return params;
+            }
+        };
+        Volley.newRequestQueue(context).add(postRequest);
+
+
+
+
+        return false;
+    }
+
 }
 
 

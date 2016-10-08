@@ -78,7 +78,7 @@ public class SignupActivity extends AppCompatActivity {
         User user = new User(name, email,password);
         Log.d("User creation check:  ", user.getEmail());
 
-        NetworkRequests networkRequests = new NetworkRequests(this);
+        NetworkRequests networkRequests = new NetworkRequests(SignupActivity.this);
         boolean result = networkRequests.registerUser(user);
 
         new android.os.Handler().postDelayed(
@@ -101,7 +101,7 @@ public class SignupActivity extends AppCompatActivity {
                         // onSignupFailed();
                         progressDialog.dismiss();
                     }
-                }, 3000);
+                }, 5000);
     }
 
 
@@ -113,7 +113,7 @@ public class SignupActivity extends AppCompatActivity {
         Intent intent = new Intent(SignupActivity.this, LoginActivity.class);
         SignupActivity.this.startActivity(intent);
 
-//        finish();
+        finish();
     }
 
     public void onSignupFailed() {

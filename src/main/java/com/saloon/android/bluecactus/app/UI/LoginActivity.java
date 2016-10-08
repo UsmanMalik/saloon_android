@@ -3,7 +3,10 @@ package com.saloon.android.bluecactus.app.UI;
 
 
 import com.saloon.android.bluecactus.R;
+import com.saloon.android.bluecactus.app.Network.NetworkRequests;
+
 import android.app.ProgressDialog;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -32,6 +35,15 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
+
+        SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String api_key = (shared.getString("api_key", ""));
+
+        Log.d("Shared pref result: ", api_key );
+
+        if (api_key != null && !api_key.isEmpty()){
+            onLoginSuccess();
+        }
 
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
@@ -73,13 +85,31 @@ public class LoginActivity extends AppCompatActivity {
 
         // TODO: Implement your own authentication logic here.
 
+        NetworkRequests networkRequests = new NetworkRequests(LoginActivity.this);
+       boolean request_result=  networkRequests.loginUser(email, password);
 
 
         new android.os.Handler().postDelayed(
                 new Runnable() {
                     public void run() {
                         // On complete call either onLoginSuccess or onLoginFailed
-                        onLoginSuccess();
+                        Log.d("Login Runner called", "Login Runner **");
+
+
+
+                        SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+                        String api_key = (shared.getString("api_key", ""));
+
+                        Log.d("Shared pref result: ", api_key );
+
+                        if (api_key != null && !api_key.isEmpty()){
+                            onLoginSuccess();
+                        }else{
+                            onLoginFailed();
+                        }
+
+
+
                         // onLoginFailed();
                         progressDialog.dismiss();
                     }
@@ -107,7 +137,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void onLoginSuccess() {
         _loginButton.setEnabled(true);
-        finish();
+        Log.d("onLogin Success called", "");
+        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+        LoginActivity.this.startActivity(intent);
+
+     finish();
     }
 
     public void onLoginFailed() {
