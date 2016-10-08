@@ -12,12 +12,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/drawable-nodpi/b_avator.png"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/b.png",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/drawable-nodpi/b.png"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/d_avator.png",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/drawable-nodpi/d_avator.png"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/b.png",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/drawable-nodpi/b.png"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/drawable-nodpi-v4/a.png",

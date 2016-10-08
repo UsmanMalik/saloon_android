@@ -267,6 +267,65 @@ public class NetworkRequests {
         return false;
     }
 
+    public boolean registerUserGCM(final String regId, final String email){
+
+        String temp_url = "http://192.168.43.108:3000/api/register/register_device";
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+
+                            Log.d("Register Device: ", response);
+                            JSONObject jsonResponse = new JSONObject(response);
+
+                            String api_key = jsonResponse.getString("api_key");
+                            JSONObject user = jsonResponse.getJSONObject("user");
+                            Log.d("first_name", user.getString("first_name"));
+                            SharedPreferences sharedpreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedpreferences.edit();
+
+                            editor.putString("api_key", api_key);
+                            editor.putString("first_name", user.getString("first_name"));
+                            editor.putString("email", user.getString("email"));
+                            editor.putString("password", user.getString("password"));
+
+
+                            editor.commit();
+
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String> params = new HashMap<>();
+                // the POST parameters:
+                params.put("email", email);
+                params.put("reg_id", regId);
+                return params;
+            }
+        };
+        Volley.newRequestQueue(context).add(postRequest);
+
+
+
+
+        return false;
+    }
+
 }
 
 

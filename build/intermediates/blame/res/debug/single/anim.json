@@ -44,23 +44,23 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_snackbar_in.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_bottom_sheet_slide_in.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_in.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_bottom_sheet_slide_in.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_fab_in.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_fab_in.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_bottom_sheet_slide_out.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_fab_out.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_fab_out.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_bottom_sheet_slide_out.xml"
     }
 ]

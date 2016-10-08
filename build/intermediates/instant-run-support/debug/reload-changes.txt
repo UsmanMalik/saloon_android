@@ -1,0 +1,2 @@
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/saloon/android/bluecactus/app/Network/NetworkRequests$override.class
+CHANGED,/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class

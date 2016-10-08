@@ -368,8 +368,597 @@
                     "startLine": 21,
                     "startColumn": 4,
                     "startOffset": 2059,
+                    "endColumn": 158,
+                    "endOffset": 2213
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 685,
+                        "endColumn": 158,
+                        "endOffset": 839
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 2218,
+                    "endColumn": 165,
+                    "endOffset": 2379
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 2734,
+                        "endColumn": 165,
+                        "endOffset": 2895
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 2384,
+                    "endColumn": 114,
+                    "endOffset": 2494
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 2440,
+                        "endColumn": 114,
+                        "endOffset": 2550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2499,
+                    "endColumn": 132,
+                    "endOffset": 2627
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 2172,
+                        "endColumn": 132,
+                        "endOffset": 2300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 2632,
+                    "endColumn": 176,
+                    "endOffset": 2804
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 1995,
+                        "endColumn": 176,
+                        "endOffset": 2167
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 2809,
+                    "endColumn": 130,
+                    "endOffset": 2935
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 1864,
+                        "endColumn": 130,
+                        "endOffset": 1990
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 2940,
+                    "endColumn": 168,
+                    "endOffset": 3104
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 1020,
+                        "endColumn": 172,
+                        "endOffset": 1188
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 3109,
+                    "endColumn": 134,
+                    "endOffset": 3239
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 1729,
+                        "endColumn": 134,
+                        "endOffset": 1859
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 3244,
+                    "endColumn": 201,
+                    "endOffset": 3441
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 1325,
+                        "endColumn": 201,
+                        "endOffset": 1522
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 3446,
+                    "endColumn": 201,
+                    "endOffset": 3643
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 1527,
+                        "endColumn": 201,
+                        "endOffset": 1724
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 3648,
+                    "endColumn": 131,
+                    "endOffset": 3775
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 1193,
+                        "endColumn": 131,
+                        "endOffset": 1320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 3780,
+                    "endColumn": 186,
+                    "endOffset": 3962
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 3323,
+                        "endColumn": 186,
+                        "endOffset": 3505
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 3967,
+                    "endColumn": 123,
+                    "endOffset": 4086
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 3199,
+                        "endColumn": 123,
+                        "endOffset": 3318
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 4091,
+                    "endColumn": 175,
+                    "endOffset": 4262
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 844,
+                        "endColumn": 175,
+                        "endOffset": 1015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 4267,
+                    "endColumn": 176,
+                    "endOffset": 4439
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 3022,
+                        "endColumn": 176,
+                        "endOffset": 3194
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 4444,
+                    "endColumn": 121,
+                    "endOffset": 4561
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 2900,
+                        "endColumn": 121,
+                        "endOffset": 3017
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 4566,
+                    "endColumn": 189,
+                    "endOffset": 4751
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 307,
+                        "endColumn": 189,
+                        "endOffset": 492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 4756,
+                    "endColumn": 187,
+                    "endOffset": 4939
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 497,
+                        "endColumn": 187,
+                        "endOffset": 680
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 39,
+                    "startColumn": 4,
+                    "startOffset": 4944,
+                    "endColumn": 136,
+                    "endOffset": 5076
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 170,
+                        "endColumn": 136,
+                        "endOffset": 302
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 5081,
+                    "endColumn": 180,
+                    "endOffset": 5257
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 33,
+                        "startColumn": 4,
+                        "startOffset": 4830,
+                        "endColumn": 180,
+                        "endOffset": 5006
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 5262,
+                    "endColumn": 124,
+                    "endOffset": 5382
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 32,
+                        "startColumn": 4,
+                        "startOffset": 4705,
+                        "endColumn": 124,
+                        "endOffset": 4825
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 5387,
+                    "endColumn": 152,
+                    "endOffset": 5535
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 3510,
+                        "endColumn": 152,
+                        "endOffset": 3658
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 43,
+                    "startColumn": 4,
+                    "startOffset": 5540,
+                    "endColumn": 245,
+                    "endOffset": 5781
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 3792,
+                        "endColumn": 245,
+                        "endOffset": 4033
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 5786,
+                    "endColumn": 128,
+                    "endOffset": 5910
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 3663,
+                        "endColumn": 128,
+                        "endOffset": 3787
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 45,
+                    "startColumn": 4,
+                    "startOffset": 5915,
+                    "endColumn": 110,
+                    "endOffset": 6021
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 4038,
+                        "endColumn": 110,
+                        "endOffset": 4144
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 46,
+                    "startColumn": 4,
+                    "startOffset": 6026,
+                    "endColumn": 178,
+                    "endOffset": 6200
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 2555,
+                        "endColumn": 178,
+                        "endOffset": 2729
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 47,
+                    "startColumn": 4,
+                    "startOffset": 6205,
+                    "endColumn": 134,
+                    "endOffset": 6335
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 2305,
+                        "endColumn": 134,
+                        "endOffset": 2435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 48,
+                    "startColumn": 4,
+                    "startOffset": 6340,
+                    "endColumn": 95,
+                    "endOffset": 6431
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 30,
+                        "startColumn": 4,
+                        "startOffset": 4356,
+                        "endColumn": 95,
+                        "endOffset": 4447
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 49,
+                    "startColumn": 4,
+                    "startOffset": 6436,
+                    "endColumn": 93,
+                    "endOffset": 6525
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 4149,
+                        "endColumn": 93,
+                        "endOffset": 4238
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 6530,
+                    "endColumn": 112,
+                    "endOffset": 6638
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 4243,
+                        "endColumn": 112,
+                        "endOffset": 4351
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 6643,
+                    "endColumn": 252,
+                    "endOffset": 6891
+                },
+                "from": {
+                    "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/res/values-ms-rMY/common_strings.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 4452,
+                        "endColumn": 252,
+                        "endOffset": 4700
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 6896,
                     "endColumn": 60,
-                    "endOffset": 2115
+                    "endOffset": 6952
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -384,11 +973,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2120,
+                    "startOffset": 6957,
                     "endColumn": 101,
-                    "endOffset": 2217
+                    "endOffset": 7054
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -403,11 +992,11 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2222,
+                    "startOffset": 7059,
                     "endColumn": 114,
-                    "endOffset": 2332
+                    "endOffset": 7169
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -422,11 +1011,11 @@
             },
             {
                 "to": {
-                    "startLine": 24,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 2337,
+                    "startOffset": 7174,
                     "endColumn": 81,
-                    "endOffset": 2414
+                    "endOffset": 7251
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -441,11 +1030,11 @@
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 2419,
+                    "startOffset": 7256,
                     "endColumn": 112,
-                    "endOffset": 2527
+                    "endOffset": 7364
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -460,11 +1049,11 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 2532,
+                    "startOffset": 7369,
                     "endColumn": 117,
-                    "endOffset": 2645
+                    "endOffset": 7482
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -479,11 +1068,11 @@
             },
             {
                 "to": {
-                    "startLine": 27,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 2650,
+                    "startOffset": 7487,
                     "endColumn": 116,
-                    "endOffset": 2762
+                    "endOffset": 7599
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -498,11 +1087,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 2767,
+                    "startOffset": 7604,
                     "endColumn": 94,
-                    "endOffset": 2857
+                    "endOffset": 7694
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -517,11 +1106,11 @@
             },
             {
                 "to": {
-                    "startLine": 29,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 2862,
+                    "startOffset": 7699,
                     "endColumn": 85,
-                    "endOffset": 2943
+                    "endOffset": 7780
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -536,11 +1125,11 @@
             },
             {
                 "to": {
-                    "startLine": 30,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 2948,
+                    "startOffset": 7785,
                     "endColumn": 89,
-                    "endOffset": 3033
+                    "endOffset": 7870
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -555,11 +1144,11 @@
             },
             {
                 "to": {
-                    "startLine": 31,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3038,
+                    "startOffset": 7875,
                     "endColumn": 86,
-                    "endOffset": 3120
+                    "endOffset": 7957
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -574,11 +1163,11 @@
             },
             {
                 "to": {
-                    "startLine": 32,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3125,
+                    "startOffset": 7962,
                     "endColumn": 100,
-                    "endOffset": 3221
+                    "endOffset": 8058
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/values-ms-rMY/values-ms-rMY.xml",
@@ -593,11 +1182,11 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3226,
+                    "startOffset": 8063,
                     "endColumn": 100,
-                    "endOffset": 3322
+                    "endOffset": 8159
                 },
                 "from": {
                     "file": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-ms-rMY/values-ms-rMY.xml",
