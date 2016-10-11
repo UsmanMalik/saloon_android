@@ -73,6 +73,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         ButterKnife.inject(this);
 
+
         SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         String api_key = (shared.getString("api_key", ""));
 
@@ -113,14 +114,18 @@ public class LoginActivity extends AppCompatActivity {
         if (checkPlayServices()) {
             gcm = GoogleCloudMessaging.getInstance(this);
             regid = getRegistrationId(context);
+            sendRegistrationIdToBackend();
+
 
             if (regid.isEmpty()) {
                 registerInBackground();
             }
-            sendRegistrationIdToBackend();
+//            sendRegistrationIdToBackend();
+
         } else {
             Log.i(TAG, "No valid Google Play Services APK found.");
         }
+
 
     }
 
@@ -384,14 +389,16 @@ public class LoginActivity extends AppCompatActivity {
     private void sendRegistrationIdToBackend() {
         // Your implementation here.
 
+        Log.e("***************", "&&");
+
         SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        String email = (shared.getString("email", ""));
+        String userId = (shared.getString("id", ""));
 
-        Log.d("regId to backend: ", email );
+        Log.d("regId to backend: ", userId );
 
-        if (email != null && !email.isEmpty()){
+        if (userId != null && !userId.isEmpty()){
             NetworkRequests networkRequests = new NetworkRequests(context);
-            networkRequests.registerUserGCM(regid,email);
+            networkRequests.registerUserGCM(regid,userId);
         }
     }
     }

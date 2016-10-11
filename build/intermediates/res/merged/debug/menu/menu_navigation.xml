@@ -18,14 +18,18 @@
         <item
             android:icon="@drawable/ic_home_black_24dp"
             android:tint="@color/button_grey"
-            android:title="One" />
+            android:title="Home" />
         <item
             android:icon="@drawable/ic_favorite_black_24dp"
             android:tint="@color/button_grey"
-            android:title="Two" />
+            android:title="Appointments" />
         <item
             android:icon="@drawable/ic_bookmark_border_black_24dp"
             android:tint="@color/button_grey"
-            android:title="Three" />
+            android:title="Contact Us" />
+        <item
+            android:icon="@drawable/common_full_open_on_phone"
+            android:tint="@color/button_grey"
+            android:title="Logout" />
     </group>
 </menu>

@@ -4,7 +4,7 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="33057067522664" >
+    timestamp="47363925566691" >
 
     <task
         name="javac"
@@ -19,21 +19,11 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="31583648190403" >
+    <build timestamp="47031615824721" >
         <artifact
             location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="32628585586029" >
-        <artifact
-            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="33006242837707" >
-        <artifact
-            location="/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="33057067522664" />
+    <build timestamp="47363925566691" />
 
 </instant-run>

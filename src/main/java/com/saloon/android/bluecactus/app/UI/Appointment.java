@@ -1,6 +1,8 @@
 package com.saloon.android.bluecactus.app.UI;
 
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +24,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.saloon.android.bluecactus.app.Network.NetworkRequests;
 import com.wdullaer.materialdatetimepicker.Utils;
@@ -55,9 +58,6 @@ public class Appointment extends AppCompatActivity implements
 
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
 
 
         // Find our View instances
@@ -105,10 +105,22 @@ public class Appointment extends AppCompatActivity implements
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+                String userID = (shared.getString("id", ""));
+
 
                 detail = (EditText)findViewById(R.id.appointment_detail);
                 NetworkRequests networkRequests = new NetworkRequests(Appointment.this);
-                networkRequests.setAppointment(time,date,detail.getText().toString());
+                networkRequests.setAppointment(time,date,detail.getText().toString(),userID);
+
+                Toast.makeText(Appointment.this, "Your Appointment is been submitted, please wait for the admin reply. Thanks.",Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(Appointment.this, MainActivity.class);
+
+                Appointment.this.startActivity(intent);
+
+                finish();
+
 
             }
         });
@@ -137,7 +149,7 @@ public class Appointment extends AppCompatActivity implements
     @Override
     public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
         String date = "You picked the following date: "+dayOfMonth+"/"+(++monthOfYear)+"/"+year;
-        this.date = dayOfMonth+"/"+(++monthOfYear)+"/"+year;
+        this.date = dayOfMonth+"/"+(monthOfYear)+"/"+year;
         dateTextView.setText(date);
     }
 }

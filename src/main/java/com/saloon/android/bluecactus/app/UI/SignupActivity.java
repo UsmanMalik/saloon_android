@@ -88,7 +88,7 @@ public class SignupActivity extends AppCompatActivity {
                         // depending on success
 
                         SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-                        String result = (shared.getString("result", ""));
+                        String result = (shared.getString("register_result", ""));
 
                         Log.d("Shared pref result: ", result );
 

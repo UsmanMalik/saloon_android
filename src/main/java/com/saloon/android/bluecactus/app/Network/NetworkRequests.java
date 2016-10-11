@@ -28,7 +28,7 @@ import java.util.Map;
 public class NetworkRequests {
 
     Context context;
-    static String url = "http://httpbin.org/get?site=code&network=tutsplus";
+    static String url = "http://192.168.43.108:3000/api/";
     static  String RESULT_TAG = "Json Result: ";
 //    public static final String MyPREFERENCES = "MyPrefs" ;
 //    SharedPreferences sharedpreferences;
@@ -73,11 +73,11 @@ public class NetworkRequests {
     public ArrayList<Division> getDivisions(){
 
         final ArrayList<Division> divisionList = new ArrayList<Division>();
-        String temp_url = "http://192.168.43.108:3000/api/divisions";
+        String divisions_url = url + "divisions";
 
 
         JsonArrayRequest jsonRequest = new JsonArrayRequest
-                (Request.Method.GET, temp_url, null, new Response.Listener<JSONArray>() {
+                (Request.Method.GET, divisions_url, null, new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
                         // the response is already constructed as a JSONObject!
@@ -108,21 +108,19 @@ public class NetworkRequests {
         return divisionList;
     }
 
-    public boolean setAppointment(final String time,final String date, final String details){
+    public boolean setAppointment(final String time,final String date, final String details, final String userID){
 
         Log.i("Set Appointment: " , time + " " + date + " " + details);
-        String temp_url = "http://192.168.43.108:3000/api/appointments";
+        String appointments_url = url + "appointments";
 
 
-        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+        StringRequest postRequest = new StringRequest(Request.Method.POST, appointments_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
-                            JSONObject jsonResponse = new JSONObject(response).getJSONObject("result");
-
-                            System.out.println("Site: "+jsonResponse.toString());
-                        } catch (JSONException e) {
+                            Log.d("Appointment: ", response);
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }
@@ -137,11 +135,13 @@ public class NetworkRequests {
             @Override
             protected Map<String, String> getParams()
             {
+
                 Map<String, String> params = new HashMap<>();
                 // the POST parameters:
                 params.put("time", time);
                 params.put("date", date);
                 params.put("details", details);
+                params.put("user_id", userID); // Hardcoded need to get from shardprefs
                 return params;
             }
         };
@@ -152,10 +152,10 @@ public class NetworkRequests {
 
     public boolean registerUser(final User user){
 
-        String temp_url = "http://192.168.43.108:3000/api/register";
+        String register_url = url + "register";
 
 
-        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+        StringRequest postRequest = new StringRequest(Request.Method.POST, register_url,
                 new Response.Listener<String>() {
                     boolean  requestResult =false;
                     @Override
@@ -169,10 +169,10 @@ public class NetworkRequests {
                             SharedPreferences sharedpreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedpreferences.edit();
 
-                            editor.putString("result", result);
-                            editor.putString("first_name", user.getString("first_name"));
-                            editor.putString("email", user.getString("email"));
-                            editor.putString("password", user.getString("password"));
+                            editor.putString("register_result", result);
+                            editor.putString("id", user.getString("id"));
+//                            editor.putString("first_name", user.getString("first_name"));
+//                            editor.putString("email", user.getString("email"));
 
 
                             editor.commit();
@@ -210,10 +210,10 @@ public class NetworkRequests {
 
     public boolean loginUser(final String email, final String password){
 
-        String temp_url = "http://192.168.43.108:3000/api/sessions";
+        String login_url = url + "sessions";
 
 
-        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+        StringRequest postRequest = new StringRequest(Request.Method.POST, login_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -229,9 +229,9 @@ public class NetworkRequests {
                             SharedPreferences.Editor editor = sharedpreferences.edit();
 
                             editor.putString("api_key", api_key);
+//                            editor.putString("id", user.getString("id"));
                             editor.putString("first_name", user.getString("first_name"));
                             editor.putString("email", user.getString("email"));
-                            editor.putString("password", user.getString("password"));
 
 
                             editor.commit();
@@ -261,40 +261,21 @@ public class NetworkRequests {
         };
         Volley.newRequestQueue(context).add(postRequest);
 
-
-
-
         return false;
     }
 
-    public boolean registerUserGCM(final String regId, final String email){
+    public boolean registerUserGCM(final String regId, final String userId){
 
-        String temp_url = "http://192.168.43.108:3000/api/register/register_device";
+        String register_gcm_url = url + "register/register_device";
 
 
-        StringRequest postRequest = new StringRequest(Request.Method.POST, temp_url,
+        StringRequest postRequest = new StringRequest(Request.Method.POST, register_gcm_url,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
 
                             Log.d("Register Device: ", response);
-                            JSONObject jsonResponse = new JSONObject(response);
-
-                            String api_key = jsonResponse.getString("api_key");
-                            JSONObject user = jsonResponse.getJSONObject("user");
-                            Log.d("first_name", user.getString("first_name"));
-                            SharedPreferences sharedpreferences = context.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
-                            SharedPreferences.Editor editor = sharedpreferences.edit();
-
-                            editor.putString("api_key", api_key);
-                            editor.putString("first_name", user.getString("first_name"));
-                            editor.putString("email", user.getString("email"));
-                            editor.putString("password", user.getString("password"));
-
-
-                            editor.commit();
-
 
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -313,7 +294,7 @@ public class NetworkRequests {
             {
                 Map<String, String> params = new HashMap<>();
                 // the POST parameters:
-                params.put("email", email);
+                params.put("user_id", userId);
                 params.put("reg_id", regId);
                 return params;
             }
