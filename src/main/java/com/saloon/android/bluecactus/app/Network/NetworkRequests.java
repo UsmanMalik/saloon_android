@@ -229,7 +229,7 @@ public class NetworkRequests {
                             SharedPreferences.Editor editor = sharedpreferences.edit();
 
                             editor.putString("api_key", api_key);
-//                            editor.putString("id", user.getString("id"));
+                            editor.putString("id", user.getString("id"));
                             editor.putString("first_name", user.getString("first_name"));
                             editor.putString("email", user.getString("email"));
 

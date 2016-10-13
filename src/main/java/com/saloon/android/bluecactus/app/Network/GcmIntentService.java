@@ -55,17 +55,34 @@ public class GcmIntentService extends IntentService {
                 // If it's a regular GCM message, do some work.
             } else if (GoogleCloudMessaging.MESSAGE_TYPE_MESSAGE.equals(messageType)) {
                 // This loop represents the service doing some work.
-                for (int i = 0; i < 5; i++) {
-                    Log.i(TAG, "Working... " + (i + 1)
-                            + "/5 @ " + SystemClock.elapsedRealtime());
-                    try {
-                        Thread.sleep(5000);
-                    } catch (InterruptedException e) {
+//                for (int i = 0; i < 5; i++) {
+//                    Log.i(TAG, "Working... " + (i + 1)
+//                            + "/5 @ " + SystemClock.elapsedRealtime());
+//                    try {
+//                        Thread.sleep(5000);
+//                    } catch (InterruptedException e) {
+//                    }
+//                }
+                Log.i(TAG, "Completed work @ " + SystemClock.elapsedRealtime());
+
+                String operationKey = extras.getString("operation_key");
+                Log.i(TAG, "Operation Key: " + operationKey);
+
+                if (operationKey.equals("operation_approved_appointment")) {
+                    Log.i(TAG, "operation_approved_appointment: " + extras.toString());
+                    if (extras.containsKey("approved_appointment")){
+                        sendNotification(extras.getString("approved_appointment"));
                     }
                 }
-                Log.i(TAG, "Completed work @ " + SystemClock.elapsedRealtime());
-                // Post notification of received message.
-                sendNotification("Received: " + extras.toString());
+                if (operationKey.equals("operation_decline_appointment")) {
+                    Log.i(TAG, "operation_decline_appointment: " + extras.toString());
+                    if (extras.containsKey("declined_appointment")){
+                        sendNotification(extras.getString("declined_appointment"));
+                    }
+                }
+
+                    // Post notification of received message.
+//                sendNotification("Received: " + extras.toString());
                 Log.i(TAG, "Received: " + extras.toString());
             }
         }
@@ -86,7 +103,7 @@ public class GcmIntentService extends IntentService {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.common_signin_btn_icon_dark)
-                        .setContentTitle("GCM Notification")
+                        .setContentTitle("Spin Saloon")
                         .setStyle(new NotificationCompat.BigTextStyle()
                                 .bigText(msg))
                         .setContentText(msg);

@@ -168,6 +168,7 @@ public class LoginActivity extends AppCompatActivity {
                         Log.d("Shared pref result: ", api_key );
 
                         if (api_key != null && !api_key.isEmpty()){
+                            sendRegistrationIdToBackend();
                             onLoginSuccess();
                         }else{
                             onLoginFailed();
