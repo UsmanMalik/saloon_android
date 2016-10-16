@@ -52,5 +52,7 @@
     <string name="limit_dates">Limit selectable dates</string>
     <string name="disable_dates">Disable specific dates</string>
     <string name="highlight_dates">Highlight certain dates</string>
+    <integer name="LOCATION_PERMISSION_REQUEST_CODE">4152</integer>
+
 
 </resources>

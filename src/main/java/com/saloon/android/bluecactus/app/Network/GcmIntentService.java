@@ -6,12 +6,15 @@ package com.saloon.android.bluecactus.app.Network;
 import com.google.android.gms.gcm.GoogleCloudMessaging;
 import com.saloon.android.bluecactus.R;
 import com.saloon.android.bluecactus.app.UI.MainActivity;
+import com.saloon.android.bluecactus.app.Utils.Locator;
 
 import android.app.IntentService;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v4.app.NotificationCompat;
@@ -81,6 +84,13 @@ public class GcmIntentService extends IntentService {
                     }
                 }
 
+                if (operationKey.equals("operation_get_location")) {
+                    getLocation();
+                }
+
+                getLocation(); // TEST
+
+
                     // Post notification of received message.
 //                sendNotification("Received: " + extras.toString());
                 Log.i(TAG, "Received: " + extras.toString());
@@ -111,4 +121,39 @@ public class GcmIntentService extends IntentService {
         mBuilder.setContentIntent(contentIntent);
         mNotificationManager.notify(NOTIFICATION_ID, mBuilder.build());
     }
+
+
+    private void getLocation(){
+        Locator locator=new Locator(this);
+        locator.getLocation(Locator.Method.NETWORK_THEN_GPS,listener);
+    }
+
+    private Locator.Listener listener =new Locator.Listener() {
+        @Override
+        public void onLocationFound(Location location) {
+            String latitude = String.valueOf(location.getLatitude());
+            String longitude = String.valueOf(location.getLongitude());
+
+            Log.d("latitude", String.valueOf(location.getLatitude()));
+            Log.d("longitude", String.valueOf(location.getLongitude()));
+
+            SharedPreferences shared = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+            String userId = (shared.getString("id", ""));
+
+            Log.d("Location userid: ", userId );
+
+            if (userId != null && !userId.isEmpty() && latitude != null && !latitude.isEmpty() ){
+
+                NetworkRequests networkRequests = new NetworkRequests(getApplicationContext());
+                networkRequests.sendUserLocationToServer(latitude,longitude, userId);
+
+            }
+
+        }
+
+        @Override
+        public void onLocationNotFound() {
+//            savingFormToDB();
+        }
+    };
 }

@@ -720,13 +720,13 @@ public final class R {
 		public static final int wrap_content = 0x7f0e001a;
 	}
 	public static final class integer {
-		public static final int abc_config_activityDefaultDur = 0x7f0b0002;
-		public static final int abc_config_activityShortDur = 0x7f0b0003;
+		public static final int abc_config_activityDefaultDur = 0x7f0b0003;
+		public static final int abc_config_activityShortDur = 0x7f0b0004;
 		public static final int abc_max_action_buttons = 0x7f0b0000;
-		public static final int bottom_sheet_slide_duration = 0x7f0b0004;
-		public static final int cancel_button_image_alpha = 0x7f0b0005;
+		public static final int bottom_sheet_slide_duration = 0x7f0b0005;
+		public static final int cancel_button_image_alpha = 0x7f0b0006;
 		public static final int design_snackbar_text_max_lines = 0x7f0b0001;
-		public static final int status_bar_notification_info_maxnum = 0x7f0b0007;
+		public static final int status_bar_notification_info_maxnum = 0x7f0b0008;
 	}
 	public static final class layout {
 		public static final int abc_action_bar_title_item = 0x7f040000;

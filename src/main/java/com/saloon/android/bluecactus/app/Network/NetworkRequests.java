@@ -307,6 +307,49 @@ public class NetworkRequests {
         return false;
     }
 
+    public boolean sendUserLocationToServer(final String latitude, final String longitude, final String userId){
+
+        String register_gcm_url = url + "smartpush_api/locations";
+
+
+        StringRequest postRequest = new StringRequest(Request.Method.POST, register_gcm_url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        try {
+
+                            Log.d("Register Device: ", response);
+
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        error.printStackTrace();
+                    }
+                }
+        ) {
+            @Override
+            protected Map<String, String> getParams()
+            {
+                Map<String, String> params = new HashMap<>();
+                // the POST parameters:
+                params.put("user_id", userId);
+                params.put("latitude", latitude);
+                params.put("longitude",longitude);
+                return params;
+            }
+        };
+        Volley.newRequestQueue(context).add(postRequest);
+
+
+        return false;
+
+    }
+
 }
 
 

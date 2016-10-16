@@ -478,6 +478,7 @@
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <item name="view_offset_helper" type="id"/>
+    <integer name="LOCATION_PERMISSION_REQUEST_CODE">4152</integer>
     <integer name="abc_config_activityDefaultDur">220</integer>
     <integer name="abc_config_activityShortDur">150</integer>
     <integer name="abc_max_action_buttons">2</integer>

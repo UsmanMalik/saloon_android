@@ -168,12 +168,12 @@
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/layout/abc_dialog_title_material.xml"
     },
     {
-        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/activity_detail.xml",
-        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/activity_detail.xml"
-    },
-    {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/mdtp_time_header_label.xml",
         "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.5.0/res/layout/mdtp_time_header_label.xml"
+    },
+    {
+        "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/activity_detail.xml",
+        "source": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/src/main/res/layout/activity_detail.xml"
     },
     {
         "merged": "/home/usman/AndroidStudioProjects/demo_teeks/google/doogle/app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
